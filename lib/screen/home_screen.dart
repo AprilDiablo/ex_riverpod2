@@ -1,4 +1,5 @@
 import 'package:exriverpod2/layout/default_layout.dart';
+import 'package:exriverpod2/screen/autodispose_modifier_screen.dart';
 import 'package:exriverpod2/screen/family_modifier_screen.dart';
 import 'package:exriverpod2/screen/future_provider_screen.dart';
 import 'package:exriverpod2/screen/state_notifier_provider_screen.dart';
@@ -64,6 +65,16 @@ class HomeScreen extends StatelessWidget {
               );
             },
             child: Text('FamilyModifierScreen'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => AutoDisposeModifierScreen(),
+                ),
+              );
+            },
+            child: Text('AutoDisposeModifierScreen'),
           ),
         ],
       ),
